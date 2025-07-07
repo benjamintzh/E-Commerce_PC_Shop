@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".promo-banner").hover(
+        function(){
+            $(this).find(".promo-overlay").fadeIn(200);
+        },
+        function(){
+            $(this).find(".promo-overlay").fadeOut(200);
+        }
+    );
+});
