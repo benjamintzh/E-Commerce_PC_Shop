@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOU TECH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js-files/navbar.js"></script>
+    <script src="../js-files/profile.js"></script>
+    <script src="../js-files/address-selection.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css-files/profile.css">
+    <link rel="stylesheet" href="../css-files/header-footer.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top header -->
+        <nav class="navbar navbar-expand-lg py-0" id="top-header">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto" id="auth-links">
+                        <!-- Dynamic content added via JS -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Middle header -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-1" id="middle-header">
+            <div class="container">
+                <a class="navbar-brand" href="../html-files/index.html">
+                    <img src="../images/wou-logo-only-w.png" alt="WOU Tech Logo"> WOU TECH
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/promotion.html"
+                                data-category="none">Promotion</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/product.html"
+                                data-category="product">Product</a></li>
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/services.html"
+                                data-category="services">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Bottom header -->
+        <nav class="navbar navbar-expand-lg py-0" id="bottom-header">
+            <div class="container">
+                <ul class="navbar-nav ms-auto" id="bottom-nav"></ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container profile-container">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-md-3 sidebar">
+                <div class="user-info text-center">
+                    <!-- Default icon (visible when no profile image) -->
+                    <i class="fas fa-user-circle fa-5x" id="defaultProfileIcon"></i>
+                    <!-- Profile image element (hidden by default) -->
+                    <img id="sidebarProfilePic" src="" alt="Profile" class="img-fluid"
+                        style="width:80px; height:80px; border-radius:50%; display:none;">
+                    <h5 class="mt-2" id="sidebarUsername">User Name</h5>
+                </div>
+
+                <ul class="nav flex-column mt-3">
+                    <!-- My Account with collapsible submenu -->
+                    <li class="nav-item">
+                        <a class="nav-link active" id="myAccountToggle" href="javascript:void(0)">
+                            <i class="fas fa-user"></i> My Account
+                        </a>
+                        <ul class="nav flex-column sub-menu open" id="accountSubMenu">
+                            <li class="nav-item">
+                                <a class="nav-link sub-link active" data-target="personalInfo"
+                                    href="javascript:void(0)">Personal Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" data-target="addressInfo"
+                                    href="javascript:void(0)">Address</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Order Tracking -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="orderTracking" href="javascript:void(0)">
+                            <i class="fas fa-shopping-cart"></i> Order Tracking
+                        </a>
+                    </li>
+                    <!-- Appointment -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-target="appointment" href="javascript:void(0)">
+                            <i class="fas fa-calendar-alt"></i> Appointment
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-md-9 content-section">
+                <!-- Personal Info Section -->
+                <div id="personalInfo" class="tab-content">
+                    <h4>My Account</h4>
+                    <p>Manage your personal data and ensure account security.</p>
+                    <hr>
+                    <form id="profileForm">
+                        <div class="row align-items-center">
+                            <!-- User Info -->
+                            <div class="col-md-8">
+                                <div class="mb-3">
+                                    <label class="form-label">User Name</label>
+                                    <input type="text" class="form-control" id="username" disabled required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" disabled required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" disabled required>
+                                </div>
+                                <button type="button" id="editBtn" class="btn btn-primary">Edit</button>
+                            </div>
+                            <!-- Profile Image Upload -->
+                            <div class="col-md-4 text-center">
+                                <img id="profilePic" src="#" alt="Profile" class="img-fluid">
+                                <input type="file" id="imageUpload" name="profile_image" class="hidden-input">
+                                <button type="button" class="btn btn-info mt-2" id="selectImageBtn">Select
+                                    Image</button>
+                                <p class="small text-muted mt-1">File Size: Max 1MB <br> File Type: JPEG, PNG</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Address Section -->
+                <div id="addressInfo" class="tab-content" style="display:none;">
+                    <h4>Address Information</h4>
+                    <p>Manage your address details with ease and keep your location information secure.</p>
+                    <hr>
+                    <form id="addressForm">
+                        <div class="mb-3">
+                            <label class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" id="addressLine1"
+                                placeholder="Enter address line 1">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Address Line 2</label>
+                            <input type="text" class="form-control" id="addressLine2"
+                                placeholder="Enter address line 2 (optional)">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Country</label>
+                            <select class="form-control" id="country">
+                                <option value="">Select Country</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapore">Singapore</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <select class="form-control" id="state">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">City</label>
+                            <select class="form-control" id="city">
+                                <option value="">Select City</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="postalCode" placeholder="Enter postal code">
+                        </div>
+                        <button type="button" id="updateAddressBtn" class="btn btn-primary">Update Address</button>
+                    </form>
+                </div>
+
+                <!-- Order Tracking Section -->
+                <div id="orderTracking" class="tab-content" style="display:none;">
+                    <h4>Order Tracking</h4>
+                    <p>Track your recent orders and their statuses.</p>
+                    <div id="orderTrackingContainer"></div> <!-- Order tracking details will load here -->
+                </div>
+
+                <!-- Appointment Section -->
+                <div id="appointment" class="tab-content" style="display:none;">
+                    <h4>Appointment</h4>
+                    <p>Your appointment details will appear here.</p>
+                    <!-- Add appointment info here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-4 py-4 bg-light">
+        <div class="container">
+            <div class="row ms-5">
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p>012 - 3456789<br>013 - 4578991<br>019 - 9867866</p>
+                    <h6 class="fw-bold mt-5">Email</h6>
+                    <p>contact@woutech.help.com</p>
+                </div>
+                <!-- Address Section -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Address</h6>
+                    <p>7, Gat Lebuh China,<br>Taman Dhoby Ghaut,<br>10300 George Town,<br>Pulau Pinang</p>
+                    <h6 class="fw-bold mt-5">Working Hours</h6>
+                    <p>Mon-Fri: 9:00 am - 6:00 pm<br>Sat-Sun: 9:00 am - 3:00 pm</p>
+                </div>
+                <!-- Social Media & Payment Methods -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <a href="#"><img src="../images/facebook-logo.png" alt="Facebook" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/ins-logo.png" alt="Instagram" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/twitter-logo.png" alt="Twitter" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/yt-logo.png" alt="YouTube" width="40" class="me-3"></a>
+                    <h6 class="fw-bold mt-4">We Accept</h6>
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <img src="../images/paypal-logo.png" alt="PayPal" width="70">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="../images/visa-logo.png" alt="Visa" width="70">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="../images/master-logo.png" alt="MasterCard" width="70">
+                        </div>
+                        <div class="col-5 text-center mt-2">
+                            <img src="../images/tng-logo.png" alt="Touch 'n Go" width="60">
+                        </div>
+                        <div class="col-2 text-center mt-2">
+                            <img src="../images/grab-pay-logo.png" alt="GrabPay" width="60">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <p>&copy; 2025 WOU Tech Sdn. Bhd. All Rights Reserved | <a
+                        href="../html-files/privacy-policy.html">Privacy Policy</a> | <a
+                        href="../html-files/term-regulation.html">Terms &amp; Regulations</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

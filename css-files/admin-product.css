@@ -1,0 +1,108 @@
+/* ===== Product Table Styling ===== */
+.order-table {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-table h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.order-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.order-table thead {
+    background: #212529;
+    color: white;
+}
+
+.order-table th, .order-table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Fix Column Widths */
+.order-table th:first-child, .order-table td:first-child {
+    width: 5%;
+}
+
+.order-table th:nth-child(2), .order-table td:nth-child(2) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.order-table th:nth-child(3), .order-table td:nth-child(3) {
+    width: 15%;
+}
+
+.order-table th:nth-child(4), .order-table td:nth-child(4) {
+    width: 10%;
+}
+
+.order-table th:nth-child(5), .order-table td:nth-child(5) {
+    width: 15%;
+}
+
+/* Product Column: Image + Name */
+.product-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-name img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Category Badge */
+.category-badge {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Stock Badge */
+.stock-status {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.stock-status.in-stock {
+    background-color: #28a745;
+    color: white;
+}
+
+.stock-status.out-of-stock {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* ===== Fix Button Alignment in Actions Column ===== */
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Space between buttons */
+    height: 100%;
+}
+
+.actions .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevents button text wrapping */
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOU TECH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js-files/navbar.js"></script>
+    <script src="../js-files/carousel.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css-files/e-waste.css">
+    <link rel="stylesheet" href="../css-files/header-footer.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-0" id="top-header">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto" id="auth-links">
+                        <!-- Dynamic content added via JS -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark py-1" id="middle-header">
+            <div class="container">
+                <a class="navbar-brand" href="../html-files/index.html">
+                    <img src="../images/wou-logo-only-w.png" alt="WOU Tech Logo"> WOU TECH
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/promotion.html"
+                                data-category="none">Promotion</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/product.html"
+                                data-category="product">Product</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link menu-link px-3" href="../html-files/services.html"
+                                data-category="services">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <nav class="navbar navbar-expand-lg py-0" id="bottom-header">
+            <div class="container">
+                <ul class="navbar-nav ms-auto" id="bottom-nav"></ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="banner">
+            <div class="container">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-6 banner-content">
+                        <h1>E-Waste Recycling Made Easy</h1>
+                        <p>Just post in or book a doorstep pickup to get rid of your e-waste with us.</p>
+                        <a href="#" class="btn btn-green">REQUEST NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center py-5 bg-light" id="content-info">
+            <h2 class="fw-bold">What is E-Waste?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-muted">E-waste (Electronic Waste) includes discarded electronics like computers,
+                        phones,
+                        and
+                        printers. Proper recycling prevents environmental pollution, ensures safe disposal of hazardous
+                        materials, and allows valuable components to be reused.</p>
+                </div>
+                <div class="row mt-3 justify-content-center">
+                    <div class="col-md-1">
+                        <img src="../images/e-waste/devices.svg">
+                        <p>Devices</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <img src="../images/e-waste/laptop.svg">
+                        <p>Laptops</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <img src="../images/e-waste/printer.svg">
+                        <p>Printers</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <img src="../images/e-waste/television.svg">
+                        <p>Televisions</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <img src="../images/e-waste/dvd.svg">
+                        <p>DVDs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center py-5" id="content-info">
+            <h2 class="fw-bold">Why Recycle E-Waste?</h2>
+            <div class="container mt-5">
+                <div class="row justify-content-center text-center">
+                    <!-- First Row -->
+                    <div class="col-md-5 d-flex align-items-start justify-content-center">
+                        <img src="../images/e-waste/protect-enviorment.svg" alt="Protect Environment" class="me-3 mt-2"
+                            width="50">
+                        <div>
+                            <h5 class="fw-bold">Protect the Environment</h5>
+                            <p>Proper disposal prevents harmful toxins from polluting the soil and water.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-start justify-content-center">
+                        <img src="../images/e-waste/valuable-materials.svg" alt="Recover Valuable Materials"
+                            class="me-3 mt-2" width="50">
+                        <div>
+                            <h5 class="fw-bold">Recover Valuable Materials</h5>
+                            <p>Recycling allows valuable materials such as gold, silver, and copper to be reused.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 justify-content-center text-center">
+                    <!-- Second Row -->
+                    <div class="col-md-5 d-flex align-items-start justify-content-center">
+                        <img src="../images/e-waste/landfill-waste.svg" alt="Reduce Landfill Waste" class="me-3 mt-2"
+                            width="50">
+                        <div>
+                            <h5 class="fw-bold">Reduce Landfill Waste</h5>
+                            <p>Minimizes the amount of e-waste dumped in landfills, saving space and reducing hazards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-start justify-content-center">
+                        <img src="../images/e-waste/data-security.svg" alt="Ensure Data Security" class="me-3 mt-2"
+                            width="50">
+                        <div>
+                            <h5 class="fw-bold">Ensure Data Security</h5>
+                            <p>Proper disposal prevents personal data from falling into the wrong hands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center py-5" id="recycle-e-waste">
+            <h2 class="fw-bold">How to recycle your E-Waste?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-muted">Recycle your e-waste with us easily!</p>
+                </div>
+                <!-- Dispose Responsibly Link -->
+                <div class="col-md-6 mt-3">
+                    <a href="#" class="fw-bold text-success text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#disposeModal">
+                        DISPOSE RESPONSIBLY →
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="disposeModal" tabindex="-1" aria-labelledby="disposeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex align-items-center mb-3">
+                                <img src="../images/e-waste/disposal.svg" alt="Recycle Icon"
+                                    class="img-fluid rounded-3 me-5" width="200" height="100">
+                                <p class="col-md-8">
+                                    Electronic waste contains harmful materials that can pollute the environment if not
+                                    handled properly. By recycling your old devices with us, you ensure safe disposal,
+                                    resource recovery, and reduced landfill waste. Join us in creating a greener
+                                    future <b>choose responsible e-waste recycling today!</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h2 class="text-center fw-bold text-dark">Protect Your Data Privacy</h2>
+
+            <div class="carousel-container d-flex align-items-center justify-content-center">
+                <button id="prevBtn" class="carousel-btn prev-btn btn btn-dark rounded-circle">‹</button>
+
+                <div class="overflow-hidden" id="wrapper">
+                    <div id="carouselWrapper" class="carousel-wrapper">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <img src="../images/e-waste/delete-user-account.svg" class="card-img-top"
+                                alt="Delete Accounts">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Delete Your Accounts</h5>
+                                <p class="card-text">Sign out and remove accounts from your device before recycling to
+                                    protect personal data.</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <img src="../images/e-waste/factory-reset.svg" class="card-img-top" alt="Factory Reset">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Factory Reset</h5>
+                                <p class="card-text">Perform a factory reset to erase all data and restore the device to
+                                    its original settings.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <img src="../images/e-waste/remove-sim.svg" class="card-img-top"
+                                alt="Remove SIM & Memory Card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Remove SIM & Memory Cards</h5>
+                                <p class="card-text">Remove SIM and memory cards to safeguard stored contacts and
+                                    personal files.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <img src="../images/e-waste/backup-data.svg" class="card-img-top" alt="Back-up Data">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Back up your data</h5>
+                                <p class="card-text">Physically destroy or wipe your hard drive to prevent data
+                                    recovery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="nextBtn" class="carousel-btn next-btn btn btn-dark rounded-circle">›</button>
+            </div>
+        </div>
+    </body>
+
+    <footer class="footer mt-4 py-4 bg-light">
+        <div class="container">
+            <div class="row ms-5">
+                <!-- Contact Section (Merged Email & Working Hours) -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p>012 - 3456789<br>013 - 4578991<br>019 - 9867866</p>
+
+                    <h6 class="fw-bold mt-5">Email</h6>
+                    <p>contact@woutech.help.com</p>
+                </div>
+
+                <!-- Address Section -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Address</h6>
+                    <p>7, Gat Lebuh China,<br>Taman Dhoby Ghaut,<br>10300 George Town,<br>Pulau Pinang</p>
+
+                    <h6 class="fw-bold mt-5">Working Hours</h6>
+                    <p>Mon-Fri: 9:00 am - 6:00 pm<br>Sat-Sun: 9:00 am - 3:00 pm</p>
+                </div>
+
+                <!-- Social Media & Payment Methods -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <a href="#"><img src="../images/facebook-logo.png" alt="Facebook" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/ins-logo.png" alt="Instagram" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/twitter-logo.png" alt="Twitter" width="35" class="me-3"></a>
+                    <a href="#"><img src="../images/yt-logo.png" alt="YouTube" width="40" class="me-3"></a>
+
+                    <h6 class="fw-bold mt-4">We Accept</h6>
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <img src="../images/paypal-logo.png" alt="PayPal" width="70">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="../images/visa-logo.png" alt="Visa" width="70">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="../images/master-logo.png" alt="MasterCard" width="70">
+                        </div>
+                        <div class="col-5 text-center mt-2">
+                            <img src="../images/tng-logo.png" alt="Touch 'n Go" width="60">
+                        </div>
+                        <div class="col-2 text-center mt-2">
+                            <img src="../images/grab-pay-logo.png" alt="GrabPay" width="60">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="mt-5 text-center">
+                <p>&copy; 2025 WOU Tech Sdn. Bhd. All Rights Reserved |
+                    <a href="../html-files/privacy-policy.html">Privacy Policy</a> |
+                    <a href="../html-files/term-regulation.html">Terms & Regulations</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

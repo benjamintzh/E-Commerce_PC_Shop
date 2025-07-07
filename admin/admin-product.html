@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Manage Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css-files/admin-dashboard.css">
+    <link rel="stylesheet" href="../css-files/admin-product.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../admin-js-files/product.js"></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-logo">Admin Panel</h2>
+        <ul class="nav-links">
+            <li><a href="admin-dashboard.html"></i> Dashboard</a></li>
+            <li><a href="../admin/admin-order.html"></i> Orders</a></li>
+            <li><a href="../admin/admin-product.html" class="active"></i> Products</a></li>
+            <li><a href="../admin/admin-appointment.html"> Appointment</a></li>
+            <li><a href="../admin/admin-login.html"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h2>Manage Products</h2>
+        </header>
+
+        <!-- Product Summary Cards -->
+        <div class="dashboard-cards">
+            <div class="card-box">
+                <h3 id="totalProducts">0</h3>
+                <p>Total Products</p>
+            </div>
+            <div class="card-box delivered">
+                <h3 id="inStock">0</h3>
+                <p>In Stock</p>
+            </div>
+            <div class="card-box canceled">
+                <h3 id="outOfStock">0</h3>
+                <p>Low Stock</p>
+            </div>
+        </div>
+
+        <!-- Search Bar & Add Product Button -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <input type="text" id="searchProduct" class="form-control w-50" placeholder="Search for a product...">
+            <a href="add-product.html" class="btn btn-primary">+ Add Product</a>
+        </div>
+
+        <!-- Product Table -->
+        <div class="order-table">
+            <h3>All Products</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th> <!-- Numbering column -->
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Stock</th>
+                        <th>Price (RM)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="productTable">
+                    <!-- Product rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

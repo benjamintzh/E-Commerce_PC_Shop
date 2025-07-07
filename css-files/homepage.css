@@ -1,0 +1,99 @@
+/* Hot Deals Section */
+#hotDealsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+}
+
+/* Responsive card layout */
+.card {
+    width: 100%; /* Full width by default */
+    max-width: 300px; /* Restrict max size */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px; 
+    padding: 15px; 
+}
+
+/* Responsive card images */
+.card img {
+    width: 100%;
+    height: 180px; /* Adjust height */
+    object-fit: contain; 
+    padding: 10px; 
+}
+
+/* Ensure text and buttons align properly */
+.card-body {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card h6 {
+    min-height: 50px; 
+}
+
+.testimonial-card {
+    height: 100%;
+    border-radius: 10px; 
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+.stars {
+    color: gold;
+}
+.profile-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Ensure carousel images fit well */
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Default height */
+    object-fit: cover; /* Prevent distortion */
+}
+
+@media (max-width: 992px) {
+    #hotDealsContainer {
+        justify-content: space-around;
+    }
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px; /* Reduce height on mobile */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%; /* Adjust button size */
+    }
+
+    .card {
+        max-width: 250px; /* Reduce card width */
+    }
+
+    #hotDealsContainer {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .card {
+        max-width: 100%; /* Full width for small screens */
+    }
+
+    .card img {
+        height: 150px; /* Smaller images */
+    }
+}

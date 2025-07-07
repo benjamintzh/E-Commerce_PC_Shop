@@ -1,0 +1,358 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 360px; /* Default for laptops */
+    background-image: url('../images/e-waste-banner.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+    padding: 30px 0;
+}
+
+/* Banner Content */
+.banner-content {
+    position: relative;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+}
+
+.custom-modal {
+    max-width: 850px; /* Set the max width */
+    width: 90%; /* Ensures responsiveness */
+}
+
+.modal-body p {
+    text-align: left;
+}
+
+
+.modal-backdrop {
+    backdrop-filter: blur(100px); /* Adjust blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Light overlay */
+}
+
+#recycle-e-waste{
+    background-color: rgb(223, 242, 238);
+}
+
+#recycle-e-waste p{
+    font-size: 1.1rem;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+#wrapper {
+    max-width: 90%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cards: Smaller size, rounded corners */
+.card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Navigation buttons inside the container */
+.carousel-btn {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 12px 18px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Position buttons correctly */
+.prev-btn {
+    position: absolute;
+    left: 5px;
+}
+
+.next-btn {
+    position: absolute;
+    right: 5px;
+}
+
+#content-info p{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) { /* Tablets */
+    .banner {
+        height: 300px;
+        background-position: center;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .btn-green {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .banner {
+        height: 280px;
+        background-position: top center;
+        text-align: center;
+        background-image: url('../images/e-waste-banner-small.svg');
+    }
+
+    .banner-content {
+        max-width: 100%;
+        text-align: left;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .btn-green {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+}
+
+@media (max-width: 480px) { /* Small mobile devices */
+    .banner {
+        height: 220px;
+        background-position: center top;
+        background-image: url('../images/service-banner-kosong.svg');
+    }
+
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-green {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
+}
+
+/* 📌 Content Sections */
+#content-info, #recycle-e-waste {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#content-info p, #recycle-e-waste p {
+    font-size: 1.1rem;
+}
+
+/* 📌 Carousel Container */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+#wrapper {
+    max-width: 90%;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 📌 Cards */
+.card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* 📌 Navigation Buttons */
+.carousel-btn {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 12px 18px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.prev-btn {
+    position: absolute;
+    left: 5px;
+}
+
+.next-btn {
+    position: absolute;
+    right: 5px;
+}
+
+/* 📌 Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .prev-btn {
+        left: 0;
+    }
+
+    .next-btn {
+        right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .prev-btn, .next-btn {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+/* 📌 Modal Customizations */
+.custom-modal {
+    max-width: 850px;
+    width: 90%;
+}
+
+.modal-body p {
+    text-align: left;
+}
+
+.modal-backdrop {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 📌 Footer */
+.footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer img {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer img {
+        width: 30px;
+    }
+}

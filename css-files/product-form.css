@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.main-content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Product Image Section */
+.product-image-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+}
+
+.product-image-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-image-preview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image-preview img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-image-preview button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#replaceImage {
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+#removeImage {
+    background: #dc3545;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Product Details Section */
+.product-details-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 55%;
+}
+
+.product-details-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Save Button */
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

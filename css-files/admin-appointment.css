@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+/* Appointment List */
+.appointment-list {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Actions (Edit & Delete Buttons) */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit {
+    background: #ffc107;
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete {
+    background: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Appointment Form */
+.appointment-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.card-box.confirmed {
+    background: #2ecc71;
+    color: white;
+}
+
+.card-box.cancelled {
+    background: #e74c3c;
+    color: white;
+}

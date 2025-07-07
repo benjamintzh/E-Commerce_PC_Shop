@@ -1,0 +1,83 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Promo Banners - Ensuring Responsiveness */
+.promo-banner {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1400px;  /* Restrict maximum size */
+    height: auto;  /* Let it adjust based on image aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Promo Images */
+.promo-banner img {
+    width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures full image visibility */
+    border-radius: 10px;
+}
+
+/* Overlay Effect */
+.promo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.promo-overlay i {
+    font-size: 50px;
+    color: white;
+}
+
+.promo-banner:hover .promo-overlay {
+    opacity: 1;
+}
+
+/* RESPONSIVENESS */
+
+/* Medium screens (Tablets) */
+@media (max-width: 992px) {
+    .promo-banner {
+        height: 300px; /* Reduce height */
+    }
+}
+
+/* Small screens (Mobile Devices) */
+@media (max-width: 768px) {
+    .promo-banner {
+        max-width: 100%;
+        height: auto;
+    }
+    .promo-overlay i {
+        font-size: 35px; /* Smaller overlay icon */
+    }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 576px) {
+    .promo-banner {
+        height: 200px; /* Further reduce height */
+    }
+    .promo-overlay i {
+        font-size: 25px;
+    }
+}

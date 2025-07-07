@@ -1,0 +1,6 @@
+.cart-item {
+    border-bottom: 1px solid #ddd;
+  }
+  .cart-item img {
+    max-width: 100%;
+  }

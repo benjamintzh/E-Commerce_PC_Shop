@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Appointment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css-files/admin-dashboard.css">
+    <link rel="stylesheet" href="../css-files/admin-appointment.css">
+    <script defer src="../admin-js-files/appointment.js"></script>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-logo">Admin Panel</h2>
+        <ul class="nav-links">
+            <li><a href="admin-dashboard.html"></i> Dashboard</a></li>
+            <li><a href="../admin/admin-order.html"></i> Orders</a></li>
+            <li><a href="../admin/admin-product.html"></i> Products</a></li>
+            <li><a href="../admin/admin-appointment.html" class="active"> Appointment</a></li>
+            <li><a href="../admin/admin-login.html"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Edit Appointment</h2>
+            <a href="admin-appointment.html" class="btn btn-secondary">← Back to List</a>
+        </div>
+        <hr>
+
+        <section class="appointment-form">
+            <form id="editAppointmentForm" method="POST">
+                <input type="hidden" id="appointment_id" name="appointment_id">
+
+                <label for="contact_name">Contact Name</label>
+                <input type="text" id="contact_name" name="contact_name" class="form-control" required>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" class="form-control" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+
+                <label for="service_type">Service Type</label>
+                <select id="service_type" name="service_type" class="form-control">
+                    <option value="On-site">On-site</option>
+                    <option value="In-house">In-house</option>
+                </select>
+
+                <label for="appointment_date">Appointment Date</label>
+                <input type="date" id="appointment_date" name="appointment_date" class="form-control" required>
+
+                <label for="appointment_time">Appointment Time</label>
+                <input type="time" id="appointment_time" name="appointment_time" class="form-control" required>
+
+                <label for="status">Status</label>
+                <select id="status" name="status" class="form-control">
+                    <option value="Pending">Pending</option>
+                    <option value="Confirmed">Confirmed</option>
+                    <option value="Cancelled">Cancelled</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary mt-3">Update Appointment</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>

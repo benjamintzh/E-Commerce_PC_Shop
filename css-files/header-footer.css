@@ -1,0 +1,108 @@
+body {
+    background-color: #F6F3F4;
+    color: #661f26;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ✅ Ensure Top Header is properly aligned */
+#top-header {
+    background-color: #F0EDEF;
+    padding: 5px 15px;
+}
+
+#top-header .container {
+    display: flex;
+    justify-content: space-between; /* Ensures alignment */
+    align-items: center;
+}
+
+/* ✅ Auth links container */
+#auth-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ✅ User greeting (Welcome, username) */
+#auth-links .user-greeting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+/* ✅ Cart Info */
+#auth-links .cart-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+/* ✅ Cart and user icons */
+#auth-links i {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ✅ Middle Header (Main Navbar) */
+#middle-header {
+    background-color: #252525;
+}
+
+#middle-header .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#middle-header .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+#middle-header .navbar-nav .nav-link:hover {
+    color: #FFCAD4 !important;
+}
+
+/* ✅ Bottom Navbar */
+#bottom-header {
+    background-color: #ffffff;
+    display: none;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+#bottom-nav .nav-link {
+    color: #661f26 !important;
+}
+
+#bottom-nav .nav-link:hover {
+    background-color: #A84444;
+    color: white !important;
+}
+
+/* ✅ Logo */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+/* ✅ Footer */
+.footer {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.footer a {
+    color: inherit;
+}
+
+/* ✅ Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+    #auth-links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}

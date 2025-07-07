@@ -1,0 +1,136 @@
+#appointment-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Title */
+h2.fw-bold {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-label {
+    font-weight: 600;
+    color: #555;
+    margin-top: 5px;
+}
+
+.form-control, .form-check-input {
+    border-radius: 8px;
+}
+
+.form-check-label {
+    font-size: 16px;
+}
+
+/* Service Type Selection */
+.form-check {
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.serviceType:checked + .form-check-label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Placeholder Message */
+#placeholderMessage {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #6c757d;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e9ecef;
+}
+
+/* Address & Shop Info Styling */
+#addressFormContainer, #shopInfoContainer {
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+/* Shop Info */
+#shopInfoContainer h4 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#shopInfoContainer p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#shopInfoContainer strong {
+    font-size: 25px;
+    color: #00AC6C;
+}
+
+/* Date & Time Selection */
+#timeSelectionContainer {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#timeSlots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Time Slot Buttons */
+.time-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.time-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Submit Button */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: #007bff;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .form-check {
+        font-size: 14px;
+    }
+    
+    .btn-primary {
+        font-size: 16px;
+    }
+}

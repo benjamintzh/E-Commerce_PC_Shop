@@ -1,0 +1,105 @@
+.profile-container {
+    margin-top: 20px;
+}
+
+/* Left Sidebar */
+.sidebar {
+    background: #f8f9fa;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.sidebar .user-info i {
+    color: #4A67AD;
+}
+
+.sidebar .nav-link {
+    font-size: 16px;
+    padding: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #4A67AD;
+    font-weight: bold;
+}
+
+/* Sub-menu styling and transition */
+.sub-menu {
+    padding-left: 20px;
+    margin-top: 5px;
+    /* Smooth vertical collapse/expand */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+/* When open, adjust max-height to accommodate submenu items */
+.sub-menu.open {
+    max-height: 500px;
+}
+
+/* Active sub-menu link styling */
+.sub-link.active {
+    color: #4A67AD;
+    font-weight: bold;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#selectImageBtn {
+    background: #4A67AD;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+#selectImageBtn:hover {
+    background: #35478C;
+}
+
+input:disabled {
+    background-color: #e9ecef;
+}
+
+/* Remove width property so the column respects Bootstrap's grid */
+.content-section {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    max-width: 500px;
+}
+
+#profilePic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Tab Content */
+.tab-content {
+    margin-bottom: 20px;
+}
+
+.hidden-input {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+}
