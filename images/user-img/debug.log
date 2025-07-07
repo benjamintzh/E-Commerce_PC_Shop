@@ -1,0 +1,208 @@
+upload-image.php called at 2025-02-24 10:28:53
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 0.jpg
+            [full_path] => 0.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpA399.tmp
+            [error] => 0
+            [size] => 25323
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc3bd586a39.jpg
+upload-image.php called at 2025-02-24 11:03:36
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 0.jpg
+            [full_path] => 0.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php6D6C.tmp
+            [error] => 0
+            [size] => 25323
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc43f8c94a7.jpg
+upload-image.php called at 2025-02-24 11:04:22
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 0.jpg
+            [full_path] => 0.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php1EEA.tmp
+            [error] => 0
+            [size] => 25323
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc44263f163.jpg
+upload-image.php called at 2025-02-24 11:05:41
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => tng-logo.png
+            [full_path] => tng-logo.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5299.tmp
+            [error] => 0
+            [size] => 45728
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc447507b48.png
+upload-image.php called at 2025-02-24 11:09:20
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 1.png
+            [full_path] => 1.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpADBB.tmp
+            [error] => 0
+            [size] => 27883
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc4550ecf2a.png
+upload-image.php called at 2025-02-24 11:11:40
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 1.png
+            [full_path] => 1.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpD000.tmp
+            [error] => 0
+            [size] => 27883
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc45dcc4aa3.png
+upload-image.php called at 2025-02-24 11:21:20
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => 1.png
+            [full_path] => 1.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpA76F.tmp
+            [error] => 0
+            [size] => 27883
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc48203d187.png
+upload-image.php called at 2025-02-24 11:24:27
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => Logitech_MX_Master_3S.png
+            [full_path] => Logitech_MX_Master_3S.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php80FD.tmp
+            [error] => 0
+            [size] => 27376
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc48db00e7c.png
+upload-image.php called at 2025-02-24 11:47:22
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => legion-7i.png
+            [full_path] => legion-7i.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7FA0.tmp
+            [error] => 0
+            [size] => 21840
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bc4e3adf49c.png
+upload-image.php called at 2025-02-26 17:51:25
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => test-profile-img.png
+            [full_path] => test-profile-img.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php7DD7.tmp
+            [error] => 0
+            [size] => 21046
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bf468d98382.png
+upload-image.php called at 2025-02-26 17:51:58
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => test-profile-img.png
+            [full_path] => test-profile-img.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpFD0B.tmp
+            [error] => 0
+            [size] => 21046
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bf46ae2dc50.png
+upload-image.php called at 2025-02-26 17:52:25
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => test-profile-img.png
+            [full_path] => test-profile-img.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php6616.tmp
+            [error] => 0
+            [size] => 21046
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67bf46c914542.png
+upload-image.php called at 2025-02-27 15:56:06
+FILES: Array
+(
+    [profile_image] => Array
+        (
+            [name] => test-profile-img.png
+            [full_path] => test-profile-img.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php451C.tmp
+            [error] => 0
+            [size] => 21046
+        )
+
+)
+
+File moved to: C:/xampp/htdocs/DSC115-Project/images/user-img/67c07d0643ba7.png
